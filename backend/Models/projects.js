@@ -5,6 +5,10 @@ const projectSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true
+    },
+    createdBy:{
+        type:mongoose.Schema.Types.ObjectId,
+        required:true
     }
 })
 
